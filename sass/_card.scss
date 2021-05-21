@@ -1,0 +1,45 @@
+.card {
+  background-color: white;
+  margin-bottom: 2em;
+  border-radius: 0.3rem;
+  box-shadow: 0px 10px 14px 5px rgb(225, 227, 234);
+  padding: 1.45em 1.9em;
+  text-align: left;
+  width: 100%;
+  max-width: 350px;
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25em;
+  }
+  .card-subtitle {
+    font-size: 0.825rem;
+    color: $GrayishBlue;
+  }
+  .card-image {
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      width: 60px;
+    }
+  }
+  @media (min-width: 768px) {
+    margin: 2em 1em;
+  }
+  &:hover {
+    animation: 0.75s ease-in 0s 1 pop;
+    transform: scale(1.05);
+  }
+  &.border-blue {
+    border-top: 4px solid $Blue;
+  }
+  &.border-cyan {
+    border-top: 4px solid $Cyan;
+  }
+  &.border-orange {
+    border-top: 4px solid $Orange;
+  }
+  &.border-red {
+    border-top: 4px solid $Red;
+  }
+}
